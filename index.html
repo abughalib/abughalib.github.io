@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>My WebSite</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="topnav" id="dropdownclick">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#singin">
+                Sign In</a></li>
+            <li class="topnav-right"><a href="#singup">
+                Sign Up</a></li>
+            
+            <li class="dropdownicon"><a href="javascript:void(0);" 
+                onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftSide-col">
+                    <h1 class="large">Abu Ghalib's Webpage</h1>
+                </div>
+                <form>
+                    <div class="leftSide-col">
+                        <h2>Username</h2>
+                        <input class="user_input" type="text" 
+                            id="username" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class="pass_input" type="password"
+                            id="password", placeholder="Password">
+                        <div class="bnt">
+                            <button type="submit">Sign In</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="rightSide-col">
+                    <iframe class="iframe_class"
+                    src="https://www.youtube.com/embed/22YaS_NzRSU" 
+                    frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="section-2-header">The Stardards of Awesomeness</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="icon.jpg" >
+                    </div> 
+                    <label>Chat with Me</label>
+                    <p>Here are few thing about me
+                        And I have to do many thing
+                        that was not very appealing
+                        to me or the people around
+                        me. So I recided to run.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="icon.jpg" >
+                    </div> 
+                    <label>Learn to code</label>
+                    <p>Here are few thing about me
+                        And I have to do many thing
+                        that was not very appealing
+                        to me or the people around
+                        me. So I recided to run.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="icon.jpg" >
+                    </div> 
+                    <label>Build an empire</label>
+                    <p>Here are few thing about me
+                        And I have to do many thing
+                        that was not very appealing
+                        to me or the people around
+                        me. So I recided to run.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button class="learnMore" type="button">Learn more</button>
+        </div>
+    </div>
+<hr style="color: gray;">
+<div class="container">
+    <div class="row">
+            <div class="col-7">
+                <article>
+                    <p> When we speak of free software, we are referring to freedom, not
+                    price.  Our General Public Licenses are designed to make sure that you
+                    have the freedom to distribute copies of free software (and charge for
+                    them if you wish), that you receive source code or can get it if you
+                    want it, that you can change the software or use pieces of it in new
+                    free programs, and that you know you can do these things.</p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="slopeIcon">
+                    <img src="ios.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="foot-1">
+    <div class="row">
+        <div class="col-3">
+            <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script>
+        function dropdownMenu(){
+            var x = document.getElementById("dropdownclick");
+            if(x.className == "topnav"){
+                x.className += " responsive";
+            }else{
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
