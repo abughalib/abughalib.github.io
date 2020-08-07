@@ -1,182 +1,108 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <title>My WebSite</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+
 </head>
+
 <body>
-
-    <nav>
-        <ul class="topnav" id="dropdownclick">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#News">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            <li class="topnav-right"><a href="#singin">
-                Sign In</a></li>
-            <li class="topnav-right"><a href="#singup">
-                Sign Up</a></li>
-            
-            <li class="dropdownicon"><a href="javascript:void(0);" 
-                onclick="dropdownMenu()">&#9776;</a></li>
-        </ul>
-    </nav>
-
-    <div class="container" id="section-1-gradient">
-        <div class="row">
-            <div class="col-6">
-                <div class="leftSide-col">
-                    <h1 class="large">Abu Ghalib's Webpage</h1>
-                </div>
-                <form>
-                    <div class="leftSide-col">
-                        <h2>Username</h2>
-                        <input class="user_input" type="text" 
-                            id="username" placeholder="Username">
-                        <h2>Password</h2>
-                        <input class="pass_input" type="password"
-                            id="password", placeholder="Password">
-                        <div class="bnt">
-                            <button type="submit">Sign In</button>
-                        </div>
-                    </div>
-                </form>
+<header>
+    <nav-c class="nav-c">
+        <div class="container-c">
+            <div class="logo">
+                <a href="#">Abugh</a>
             </div>
-            <div class="col-6">
-                <div class="rightSide-col">
-                    <iframe class="iframe_class"
-                    src="https://www.youtube.com/embed/22YaS_NzRSU" 
-                    frameborder="0" allowfullscreen></iframe>
-                </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="nav-clinks">
+                    <li><a href="#">Something</a></li>
+                    <li><a href="#">Something</a></li>
+                    <li><a href="#">Something</a></li>
+                    <li><a href="#">Something</a></li>
+                </ul>
             </div>
+            <span class="nav-cTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
         </div>
+    </nav-c>
+</header>
+    <section class="home">
+        <div class="my_photo">
+            <img class="photo" src="abugh.jpg">
+        </div>
+
+        <div class="my_name">
+            <h1>Abu Ghalib</h1>
+        </div>
+
+        <div class="social_networking">
+            <a href="https://linkedin.com/in/abughalib"><img src="in.png"></a>
+        </div>
+
+    </section>
+    <div style="height: 1000px" class="info">
+        
+        <div class="about_me">
+
+            <div class="about_heading">
+
+                <h1>About</h1>
+                <div class="about_intro">
+                    Hello, My Name is Abu Ghalib,
+                    I'm a software Engineer, enthusianst to learn
+                    machine learning concept.
+                </div>
+
+            </div>
+
+            <div class="basic_info_heading">
+                <h1>Basic Information</h1>
+                <div>
+                    <ul>
+                        <li>Age:      19</li>
+                        <li>Email:    A221g7@protonmail.com</li>
+                        <li>Phone:    +917903130159</li>
+                        <li>Address:  Araria, Bihar</li>
+                        <li>Language: English, Hindi, Russian</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
     </div>
 
-    <header>
-        <h1 class="section-2-header">The Stardards of Awesomeness</h1>
-    </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="box">
-                    <div class="icon">
-                        <img src="icon.jpg" >
-                    </div> 
-                    <label>Chat with Me</label>
-                    <p>Here are few thing about me
-                        And I have to do many thing
-                        that was not very appealing
-                        to me or the people around
-                        me. So I recided to run.
-                    </p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="box">
-                    <div class="icon">
-                        <img src="icon.jpg" >
-                    </div> 
-                    <label>Learn to code</label>
-                    <p>Here are few thing about me
-                        And I have to do many thing
-                        that was not very appealing
-                        to me or the people around
-                        me. So I recided to run.
-                    </p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="box">
-                    <div class="icon">
-                        <img src="icon.jpg" >
-                    </div> 
-                    <label>Build an empire</label>
-                    <p>Here are few thing about me
-                        And I have to do many thing
-                        that was not very appealing
-                        to me or the people around
-                        me. So I recided to run.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <button class="learnMore" type="button">Learn more</button>
-        </div>
-    </div>
-<hr style="color: gray;">
-<div class="container">
-    <div class="row">
-            <div class="col-7">
-                <article>
-                    <p> When we speak of free software, we are referring to freedom, not
-                    price.  Our General Public Licenses are designed to make sure that you
-                    have the freedom to distribute copies of free software (and charge for
-                    them if you wish), that you receive source code or can get it if you
-                    want it, that you can change the software or use pieces of it in new
-                    free programs, and that you know you can do these things.</p>
-                </article>
-            </div>
-            <div class="col-5">
-                <div class="slopeIcon">
-                    <img src="ios.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer class="foot-1">
-    <div class="row">
-        <div class="col-3">
-            <h1>Company</h1>
-            <ul>
-                <li>About</li>
-                <li>Blogs</li>
-                <li>Careers</li>
-            </ul>
-        </div>
-        <div class="col-3">
-            <h1>Company</h1>
-            <ul>
-                <li>About</li>
-                <li>Blogs</li>
-                <li>Careers</li>
-            </ul>
-        </div>
-        <div class="col-3">
-            <h1>Company</h1>
-            <ul>
-                <li>About</li>
-                <li>Blogs</li>
-                <li>Careers</li>
-            </ul>
-        </div>
-        <div class="col-3">
-            <h1>Company</h1>
-            <ul>
-                <li>About</li>
-                <li>Blogs</li>
-                <li>Careers</li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
+    <!-- Google Api Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 
     <script>
-        function dropdownMenu(){
-            var x = document.getElementById("dropdownclick");
-            if(x.className == "topnav"){
-                x.className += " responsive";
-            }else{
-                x.className = "topnav";
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav-c').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav-c').removeClass('affix');
             }
-        }
+        });
+        
     </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+    <script src="navbar.js "></script>
+
 </body>
+
 </html>
