@@ -8,7 +8,9 @@ body {
     font-size: 62.5%;
     font-size: 10px;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 /* nav-cbar section */
 
@@ -95,12 +97,15 @@ body {
     padding-top: 20px;
     display: flex;
     justify-content: center;
-    
-}
-.my_name h1{
     font-size: 40px;
     color: darksalmon;
+    transition: .2s;
 }
+.my_name:hover{
+    transform: scale(1.5);
+    color: black;
+}
+
 .my_photo{
     margin: 0 auto;
     padding-top: 200px;
@@ -129,6 +134,18 @@ body {
     height: 75px;
     width: 75px;
 }
+.linkedin{
+    transition: .2s;
+}
+.linkedin:hover{
+    transform: scale(1.5);
+}
+.github{
+    transition: 0.2s;
+}
+.github:hover{
+    transform: scale(1.5);
+}
 
 .info{
     padding-top: 75px;
@@ -151,16 +168,60 @@ body {
     padding-left: 10px;
     font-size: 30px;
 }
+.about_heading h1{
+    font-size: 30px;
+}
 .about_intro{
     font-size: 25px;
 }
+
 .about_me .basic_info_heading{
     font-size: 25px;
     flex: 1;
     order: 2;
 }
+.basic_info_heading h1{
+    font-size: 30px;
+}
 
-
+.techinal_detail{
+    padding: 10px;
+    display: flex;
+    justify-content:start;
+    flex-direction: column;
+    border: grey;
+    box-shadow: 10px 10px 8px #888888;
+    border-style: solid;
+    border-radius: 8px;
+}
+.technical_detail_heading p h1{
+    padding-bottom: 10px;
+    font-size: 30px;
+    flex: 1;
+    order: 1;
+}
+.back_end_web{
+    flex: 1;
+    order: 2;
+}
+.tec_info_heading p{
+    font-size: 18px;
+}
+.back_end_web, h1{
+    font-size: 20px;
+}
+.font_end_web{
+    flex: 1;
+    order: 3;
+}
+.mobile_app{
+    flex: 1;
+    order: 4;
+}
+.ml{
+    flex: 1;
+    order: 5;
+}
 
 /* Media qurey section */
 
