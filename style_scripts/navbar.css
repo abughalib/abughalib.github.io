@@ -95,7 +95,7 @@ html {
   color: #00bdd6;
 }
 .navbar {
-  padding-top: 18px;
+  padding-top: 20px;
   padding-bottom: 20px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -203,7 +203,6 @@ html {
       left: 0;
       bottom: 0;
       background-color: #111;
-      /*same background color of navbarbar*/
       background-position: center top;
   }
   .navbar div.main_list ul li {
@@ -221,22 +220,4 @@ html {
 .affix {
   padding: 0;
   background-color: #111;
-}
-
-.myH2 {
-  text-align: center;
-  font-size: 4rem;
-}
-
-.myP {
-  text-align: justify;
-  padding-left: 15%;
-  padding-right: 15%;
-  font-size: 20px;
-}
-
-@media all and (max-width:700px) {
-  .myP {
-      padding: 2%;
-  }
 }
