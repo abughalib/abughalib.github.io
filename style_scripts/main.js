@@ -1,9 +1,3 @@
-$(".navTrigger").click(function() {
-		$(this).toggleClass("active");
-		console.log("Clicked menu");
-		$("#mainListDiv").toggleClass("show_list");
-		$("#mainListDiv").fadeIn();
-});
 
 const navBar = $('.navbar'),
 		data = navBar.data();
@@ -17,7 +11,6 @@ function switchInto() {
 		navBar.removeClass(data.startsize);
 		navBar.addClass(data.intocolor);
 		navBar.addClass(data.intosize);
-		console.log('into transition triggered');
 };
 
 function switchStart() {
@@ -26,7 +19,6 @@ function switchStart() {
 		navBar.addClass(data.startsize);
 		navBar.removeClass(data.intocolor);
 		navBar.removeClass(data.intosize);
-		console.log('start transition triggered!');
 }
 
 $(window).scroll(() => scrolling = true);

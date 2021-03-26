@@ -38,6 +38,8 @@ html {
 /* navbarbar section */
 
 .navbar {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 65px;
   position: fixed;
@@ -46,7 +48,6 @@ html {
 }
 
 .navbar div.logo {
-  float: left;
   width: auto;
   height: auto;
   padding-left: 3rem;
@@ -59,12 +60,11 @@ html {
 }
 
 .navbar div.logo a:hover {
-  color: #00E676;
+  color: #008ae6;
 }
 
 .navbar div.main_list {
   height: 65px;
-  float: right;
 }
 
 .navbar div.main_list ul {
@@ -101,16 +101,19 @@ html {
   transition: all 0.4s ease;
 }
 
-/* Toggle Icon*/
+/*toggle-icon*/
 .toggle-icon {
-	display: block;
-	position: relative;
-	width: 100%;
-	margin: -2.2em auto 0 0.2em;
-	-webkit-transition: margin 600ms;
-	-moz-transition: margin 600ms;
-	transition: margin 600ms;
+	display: none;
+	position: absolute;
+  top: 35px;
+  right: 0;
+	-webkit-transition: margin 1s;
+	-moz-transition: margin 0.4s;
+	transition: margin 1s;
 	cursor: pointer;
+}
+.toggle-icon-affix{
+  top: 13px;
 }
 
 .toggle-icon .bar {
@@ -183,37 +186,43 @@ html {
 /* Media Query */
 
 @media screen and (max-width:600px) {
+  .toggle-icon{
+    display: block;
+  }
   .navbar div.logo {
-      margin-left: 10px;
+    margin-left: 10px;
   }
   .navbar div.main_list {
-      width: 100%;
-      height: 0;
-      overflow: hidden;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
   }
   .navbar div.show_list {
-      height: auto;
-      display: none;
+    height: auto;
+    display: none;
   }
-  .navbar div.main_list ul {
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background-color: #111;
-      background-position: center top;
+  .navbar div.main_list ul.navbarlinks {
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* background-color: #111; */
+  background-position: center top;
+  }
+  .navbar div.main_list ul.scroll {
+    background-color: #111;
   }
   .navbar div.main_list ul li {
-      width: 100%;
-      text-align: right;
+    width: 100%;
+    text-align: right;
   }
   .navbar div.main_list ul li a {
-      text-align: center;
-      width: 100%;
-      font-size: 3rem;
-      padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    padding: 20px;
   }
 }
 

@@ -1,8 +1,18 @@
-
 .home {
   width: 100%;
   padding-top: 500px;
-  height: 2000px;
+  height: 100vh;
   background-position: center top;
   background-size: cover;
+}
+.intro{
+  color: white;
+  text-align: center;
+}
+.intro .my-name{
+  color: rgb(43, 255, 0);
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
 }

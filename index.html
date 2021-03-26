@@ -17,12 +17,12 @@
         </div>
         <div id="mainListDiv" class="main_list">
           <ul class="navbarlinks">
-            <li><a href="https://github.com/abughalib?tab=repositories">Projects</a></li>
-            <li><a href="#about_me">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="https://github.com/abughalib">Github</a></li>
           </ul>
         </div>
-        <div id="toggle-icon" class="toggle-icon">
+        <div class="toggle-icon">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -31,16 +31,26 @@
   </header>
 
   <section class="home">
-    <h1 class="intro">Hello, I'm <span class="my-name">Abu Ghalib</span>
-      I'm a full-stack web developer, Mobile App Developer</h1>
+    <h1 class="intro">Hello, I'm <span class="my-name" onclick="pauseAnimation()">Abu Ghalib</span><br>
+      I'm a full-stack web developer &<br>Mobile App Developer</h1>
   </section>
 
-  <!-- Google Api Jquery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <section class="main-content">
+    <div class="about" id="#about">
+      <h1 class="heading">About Me</h1>
+    </div>
+    <div class="projects" id="#project">
+      <h1 class="heading">Projects</h1>
+    </div>
+    <div class="contect" id="contact">
+      <h1 class="heading">Contact</h1>
+    </div>
+  </section>
 
+  <!-- Scripts -->
   <script src="./style_scripts/jquery.min.js"></script>
   <script src="./style_scripts/main.js"></script>
-  <script src="./style_scripts/navbar.js "></script>
+  <script src="./style_scripts/navbar.js"></script>
 
 </body>
 
