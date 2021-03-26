@@ -15,4 +15,71 @@
 .main-content{
   display: flex;
   flex-direction: column;
+  color: white;
+}
+
+.main-content:nth-child(odd){
+  background-color: rgb(41, 41, 41);
+}
+.main-content:nth-child(even){
+    background-color: #111;
+}
+.main-content .heading{
+  margin: 100px 0;
+  text-align: center;
+  transition: 1s;
+  text-transform: uppercase;
+}
+.contents{
+  padding-left: 10%;
+}
+.about .tabs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 8% 10% 0;
+  list-style: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  .about .tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex-wrap: wrap;
+    padding: 0 auto;
+  }
+  .about .tabs > li{
+    flex: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+.about ul.tabs li{
+  font-size: 20px;
+}
+.about .tab-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.about-me{
+  display: flex;
+  flex-direction: row;
+  font-size: 50px;
+}
+.about-me .personal{
+  flex: 1;
+}
+.about-me .skills{
+  flex: 1;
+}
+
+@media screen and (max-width: 600px){
+  .about-me{
+    flex-direction: column;
+  }
 }

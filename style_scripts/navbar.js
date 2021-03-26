@@ -11,7 +11,7 @@ $(window).scroll(()=> {
 });
 
 $('.toggle-icon').click(()=>{
-  console.log("clicked")
+  $('.nav-container').toggleClass("pushed");
   $("#mainListDiv").toggleClass("show_list");
   $("#mainListDiv").fadeIn();
 });
