@@ -65,6 +65,7 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-me{
@@ -82,9 +83,10 @@
 }
 .about-me .personal .my-photo img{
   border-radius: 15px 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .about-me .personal .personal-info{
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .about-me .skills{
   flex: 1;
