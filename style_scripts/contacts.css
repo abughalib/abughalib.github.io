@@ -46,6 +46,15 @@ label.msg-label{
 label.msg-label:hover{
   height: 120px;
 }
+.msg-status{
+  font-size: 20px;
+}
+.msg-status-success{
+  color: greenyellow;
+}
+.msg-status-failed{
+  color: red;
+}
 .submit-label{
   height: 40%;
   width: 180px;
