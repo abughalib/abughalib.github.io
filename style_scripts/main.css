@@ -32,7 +32,7 @@
   text-transform: uppercase;
 }
 .contents{
-  padding-left: 10%;
+  padding: auto 5%;
 }
 .about .tabs{
   display: flex;
@@ -45,6 +45,9 @@
 }
 
 @media screen and (max-width: 700px){
+  .contents{
+    padding: 0;
+  }
   .about .tabs{
     display: flex;
     flex-direction: row;
@@ -78,6 +81,8 @@
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
 }
@@ -95,9 +100,6 @@
 @media screen and (max-width: 933px){
   .about-me{
     flex-direction: column;
-  }
-  .about-me .personal{
-    padding-left: 20%;
   }
 }
 
