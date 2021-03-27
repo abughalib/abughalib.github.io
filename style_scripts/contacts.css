@@ -8,6 +8,10 @@ input, textarea{
   color: #cfcfcf;
   resize: none;
   font-size: 20px;
+  overflow: hidden;
+}
+input:hover ,textarea:hover{
+  overflow: visible;
 }
 label:not(:last-child){
   border-bottom: 2px solid #999797;
