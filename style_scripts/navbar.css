@@ -96,7 +96,6 @@ html {
 .navbar {
   padding-top: 20px;
   padding-bottom: 20px;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
@@ -125,26 +124,14 @@ html {
 	margin: 0.9em;
 	border-right: 2.8em solid #fff;
 	border-left: 0.6em solid #d6d6d6;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	-webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
-	-moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
 	transition-property: transform, margin, border-right-color, box-shadow;
-	-webkit-transition-duration: 600ms;
-	-moz-transition-duration: 600ms;
 	transition-duration: 600ms;
 }
 .toggle-icon .bar:nth-of-type(1) {
-  -webkit-transition: opacity 300ms;
-  -moz-transition: opacity 300ms;
   transition: opacity 300ms;
 }
 .toggle-icon .bar:nth-of-type(2) {
-  -webkit-transform: rotate(-180deg);
-  -moz-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  -o-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
 
@@ -159,19 +146,11 @@ html {
 
 .pushed .bar:nth-of-type(2) {
   margin-left: 1.4em;
-  -webkit-transform: rotate(-137deg) translateY(-1.5em);
-  -moz-transform: rotate(-137deg) translateY(-1.5em);
-  -ms-transform: rotate(-137deg) translateY(-1.5em);
-  -o-transform: rotate(-137deg) translateY(-1.5em);
   transform: rotate(-137deg) translateY(-1.5em);
 }
 
 .pushed .bar:nth-of-type(3) {
   margin-left: 0.5em;
-  -webkit-transform: rotate(-42deg);
-  -moz-transform: rotate(-42deg);
-  -ms-transform: rotate(-42deg);
-  -o-transform: rotate(-42deg);
   transform: rotate(-42deg);
 }
 
@@ -187,7 +166,7 @@ html {
 
 /* Media Query */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
   .nav-container{
     display: block;
     padding-right: 2rem;
@@ -203,7 +182,7 @@ html {
   .navbar div.show_list {
     height: auto;
     display: none;
-    transition: 0.4s;
+    transition: 0.6s;
   }
   .navbar div.main_list ul.navbarlinks {
   flex-direction: column;
@@ -212,7 +191,7 @@ html {
   right: 0;
   left: 0;
   bottom: 0;
-  transition: 0.4s;
+  transition: 0.6s;
   background-position: center top;
   }
   .navbar div.main_list ul.scroll {
