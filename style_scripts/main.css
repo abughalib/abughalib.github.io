@@ -74,17 +74,29 @@
 }
 .about-me .personal{
   flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.about-me .personal .my-photo img{
+  border-radius: 15px 50px;
+}
+.about-me .personal .personal-info{
+  padding-top: 50px;
 }
 .about-me .skills{
   flex: 1;
 }
 
-
 @media screen and (max-width: 600px){
   .about-me{
     flex-direction: column;
   }
+
 }
+
 .contact{
   padding-bottom: 100px;
 }
