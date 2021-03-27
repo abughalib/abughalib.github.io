@@ -78,7 +78,7 @@
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  justify-content: center;
+  flex-direction: column;
   padding-bottom: 50px;
 }
 .about-me .personal .my-photo img{
@@ -96,7 +96,9 @@
   .about-me{
     flex-direction: column;
   }
-
+  .about-me .personal{
+    padding-left: 20%;
+  }
 }
 
 .contact{
