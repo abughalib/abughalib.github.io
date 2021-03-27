@@ -13,7 +13,7 @@
 }
 .skills .graph .item .item-name{
   flex: 1;
-  padding: 5px;
+  padding: 2px;
   overflow: hidden;
   background-color: rgb(82, 82, 82);
 }
@@ -95,10 +95,10 @@
 }
 
 .item-progress.it-9{
-  flex: 60%;
+  flex: 70%;
 }
 .item-percent.it-9{
-  flex: 40%;
+  flex: 30%;
 }
 
 .item-progress.it-10{
