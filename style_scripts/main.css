@@ -11,6 +11,7 @@
 }
 .intro .my-name{
   color: rgb(43, 255, 0);
+  cursor: default;
 }
 .main-content{
   display: flex;
@@ -83,4 +84,47 @@
   .about-me{
     flex-direction: column;
   }
+}
+.contact{
+  padding-bottom: 100px;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer{
+  background-color: rgb(29, 29, 29);
+  color: white;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.footer .heading{
+  padding: 30px 0;
+  text-align: center;
+}
+.footer .items{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 0;
+}
+.footer .items .items-icon{
+  transition: 0.4s;
+}
+.items-icon img{
+  height: 100px;
+}
+.footer .items .items-icon:hover{
+  background-color: rgb(0, 168, 247);
+}
+
+.footer .cp-right{
+  text-align: center;
+  font-size: 15px;
+}
+.footer .cp-right .cp-year{
+  color: blueviolet;
 }
