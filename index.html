@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./style_scripts/main.css" />
   <link rel="stylesheet" href="./style_scripts/navbar.css"/>
   <link rel="stylesheet" href="./style_scripts/charts.css"/>
+  <link rel="stylesheet" href="./style_scripts/contacts.css"/>
 </head>
 
 <body class="background-animate" id="body">
@@ -152,19 +153,24 @@
     </div>
     <div class="contact" id="contact">
       <h1 class="heading">Contact</h1>
-      <div class="contact-form">
-        <form action="">
-          <label class="form-item">
-            <input type="text" name="name" id="name" placeholder="Name" />
+      <div class="form">
+        <form action="" class="form-box">
+          <label class="name-label">
+            <input type="text" placeholder="NAME" id="name" />
           </label><br>
-          <label class="form-item">
-            <input type="email" name="email" id="email" placeholder="Enter Email" />
+          <label class="email-label">
+            <input type="email" placeholder="EMAIL" id="email" />
           </label><br>
-          <label class="form-item">
-            <input type="text" name="desc" id="desc" placeholder="Message" />
+          <label class="msg-label">
+            <textarea type="text" placeholder="MESSAGE" id="message">
+              
+            </textarea>
           </label><br>
-          <input type="submit"/>
+          <label class="submit-label">
+            <a href="#" onclick="">Send Message</a>
+          </label>
         </form>
+      </div>
       </div>
     </div>
   </section>
