@@ -1,0 +1,161 @@
+.home {
+  width: 100%;
+  padding-top: 500px;
+  height: 100vh;
+  background-position: center top;
+  background-size: cover;
+}
+.intro{
+  color: white;
+  text-align: center;
+}
+.intro .my-name{
+  color: rgb(43, 255, 0);
+  cursor: default;
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.main-content:nth-child(odd){
+  background-color: rgb(41, 41, 41);
+}
+.main-content:nth-child(even){
+    background-color: #111;
+}
+.main-content .heading{
+  margin: 100px 0;
+  text-align: center;
+  transition: 1s;
+  text-transform: uppercase;
+}
+.contents{
+  padding: 0;
+}
+.about .tabs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 8% 10% 0;
+  list-style: none;
+  text-align: center;
+}
+
+.tabs-desc{
+  font-size: 15px;
+}
+
+@media screen and (max-width: 700px){
+  .contents{
+    padding: 0;
+  }
+  .about .tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .about .tabs > li{
+    flex: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+.about ul.tabs li{
+  font-size: 20px;
+}
+.about .tab-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-me{
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+}
+.about-me .personal{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.about-me .personal .my-photo img{
+  border-radius: 15px 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-me .personal .personal-info{
+  padding-top: 30px;
+}
+.about-me .skills{
+  flex: 1;
+}
+
+.carousel-project {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 933px){
+  .about-me{
+    flex-direction: column;
+  }
+}
+
+.contact{
+  padding-bottom: 100px;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer{
+  background-color: rgb(29, 29, 29);
+  color: white;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.footer .heading{
+  padding: 30px 0;
+  text-align: center;
+}
+.footer .items{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  list-style: none;
+  padding: 20px 0;
+}
+.footer .items .items-icon{
+  transition: 0.4s;
+}
+.items-icon img{
+  height: 100px;
+}
+.footer .items .items-icon:hover{
+  background-color: rgb(0, 168, 247);
+}
+
+.footer .cp-right{
+  text-align: center;
+  font-size: 15px;
+}
+.footer .cp-right .cp-year{
+  color: blueviolet;
+}
+
+.content {
+  margin-top: 200px;
+}

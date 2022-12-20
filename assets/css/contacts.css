@@ -1,0 +1,75 @@
+input, textarea{
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  word-wrap: break-word;
+  background: center;
+  color: #cfcfcf;
+  resize: none;
+  font-size: 20px;
+  overflow: hidden;
+}
+input:hover ,textarea:hover{
+  overflow: visible;
+}
+label:not(:last-child){
+  border-bottom: 2px solid #999797;
+  width: 50%;
+  height: 40px;
+  transition: 700ms;
+}
+label:not(:last-child):hover{
+  border-bottom: 2px solid #a02bff;
+  width: 55%;
+  height: 50px;
+}
+.form-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label-name-nonempty{
+  border-bottom: 2px solid #a02bff;
+  width: 40%;
+  height: 50px;
+}
+.form-box *{
+  margin: 5px auto;
+}
+label.msg-label{
+  height: 100px;
+}
+.label.msg-label textarea{
+  font-size: 20px;
+}
+label.msg-label:hover{
+  height: 120px;
+}
+.msg-status{
+  font-size: 20px;
+}
+.msg-status-success{
+  color: greenyellow;
+}
+.msg-status-failed{
+  color: red;
+}
+.submit-label{
+  height: 40%;
+  width: 180px;
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(255,0,110,1) 20%, rgba(220,16,236,1) 100%);
+  transition: all 0.5s ease;
+  text-align: center;
+}
+.submit-label:hover{
+  background: green;
+  cursor: pointer;
+}
+.submit-label a{
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
